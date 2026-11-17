@@ -8,10 +8,15 @@ You design a one-page website in **Claude Chat**, test it and get it ready in **
 
 You don't need Git. On this page, click the green **Code** button, then **Download ZIP**. Unzip it somewhere you can find it, like your Desktop. The folder is called `design-gathering-workshop-main`.
 
+## Start here
+
+Double-click `start-here.html` in the folder. It opens the starter kit in your browser: the five steps with checklists, the style picker, the prompt builder and every prompt, ready to copy.
+
 ## What's inside
 
 | Folder or file | What it is |
 |---|---|
+| `start-here.html` | The starter kit page: every step, checklist and prompt |
 | `styles/` | Three style guides. Pick one and paste it into a Claude Project |
 | `examples/` | One finished page per style guide, so you can see what good looks like |
 | `prompts/` | The prompts for each step, ready to copy |
