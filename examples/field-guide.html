@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vernal and Nevada Falls</title>
+<meta name="description" content="A field guide to the Mist Trail from Happy Isles to Vernal Fall and Nevada Fall, restyled from the National Park Service trail page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+<script>
+document.documentElement.classList.add('js');
+setTimeout(function(){ if(!window.__ioFired) document.documentElement.classList.add('all'); },2500);
+</script>
+<style>
+:root{
+  --paper:#E4ECE0; --plate:#F3F6F1; --ink:#1E3328; --muted:#4F6357; --rust:#9A4A16; --marigold:#E9A23B;
+  --serif:"Newsreader", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --hand:"Caveat", "Bradley Hand", cursive;
+  --margin:200px; --gap:56px; --col:680px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 20px/1.55 var(--serif);font-optical-sizing:auto}
+a{color:var(--rust);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
+p{margin:0 0 1em}
+.label{font:400 13px/1.45 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.label b{font-weight:500;color:var(--rust)}
+
+.credit{border-bottom:1px solid var(--ink);padding:10px 16px;text-align:left}
+.credit p{margin:0 auto;max-width:1040px;font:400 13px/1.5 var(--mono);color:var(--muted)}
+.credit a{color:var(--rust)}
+
+.wrap{max-width:1104px;margin:0 auto;padding:0 32px}
+section,header,footer{overflow-x:clip}
+.grid{display:grid;grid-template-columns:var(--margin) minmax(0,var(--col));column-gap:var(--gap)}
+.grid>*{grid-column:2}
+.grid>.side{grid-column:1}
+.grid>.full{grid-column:1 / -1}
+
+/* hero */
+.hero{padding:72px 0 0}
+.hero .side{padding-top:14px}
+.hero h1{font:400 80px/1.02 var(--serif);letter-spacing:-.015em;margin:0 0 28px;grid-column:2 / -1;max-width:15ch}
+.hero h1 em{font-style:italic;font-weight:300}
+.stand{font-size:22px;line-height:1.5;max-width:31em;margin-bottom:48px}
+.side .label + .label{margin-top:10px}
+
+/* figures */
+.fig{margin:0 0 72px;background:var(--plate);border:1px solid var(--ink);padding:28px 28px 0}
+.fig svg{display:block;width:100%;height:auto;overflow:visible}
+.fig figcaption{border-top:1px solid var(--ink);margin:24px -28px 0;padding:14px 28px 16px;font:400 13px/1.5 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em;display:flex;flex-wrap:wrap;gap:4px 24px;justify-content:space-between}
+.fig figcaption b{color:var(--rust);font-weight:500}
+.fig figcaption span:last-child{text-transform:none;letter-spacing:0}
+.fig svg.tall{display:none}
+.fig.small{max-width:440px}
+
+.ln{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.ln.base{stroke-width:1}
+.dot{fill:var(--plate);stroke:var(--ink);stroke-width:1.5}
+.mari{fill:var(--marigold);stroke:var(--ink);stroke-width:1.5}
+.lead{fill:none;stroke:var(--ink);stroke-width:1;stroke-dasharray:1 4;stroke-linecap:round}
+.closed{fill:none;stroke:var(--rust);stroke-width:5;stroke-dasharray:2 5;stroke-linecap:butt;opacity:.85}
+.sv{font-family:var(--serif);font-size:17px;fill:var(--ink)}
+.sv.i{font-style:italic}
+.mv{font-family:var(--mono);font-size:14.5px;letter-spacing:.06em;fill:var(--muted);text-transform:uppercase}
+.mv.r{fill:var(--rust)}
+.tall .sv{font-size:16.5px}
+.tall .mv{font-size:13.5px;letter-spacing:.04em}
+
+/* chapters */
+.ch{padding:24px 0 40px}
+.ch .side{padding-top:12px}
+.ch h2{font:500 36px/1.15 var(--serif);margin:0 0 24px;letter-spacing:-.005em}
+.ch .side .label:first-child{color:var(--ink)}
+.pair{display:grid;grid-template-columns:var(--margin) minmax(0,var(--col));column-gap:var(--gap);grid-column:1 / -1}
+.pair>p,.pair>div,.pair>ul{grid-column:2;grid-row:1}
+.pair>aside{grid-column:1;grid-row:1;padding-top:6px}
+.note{font:400 13px/1.5 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);border-top:1px solid var(--ink);padding-top:8px}
+.note b{display:block;font-weight:500;color:var(--ink)}
+.hand{font:500 24px/1.15 var(--hand);color:var(--rust);margin:-4px 0 28px;padding-left:24px;position:relative;max-width:22em}
+.hand::before{content:"";position:absolute;left:0;top:13px;width:14px;border-top:1px solid var(--rust)}
+
+/* turnaround table */
+.turn{width:100%;border-collapse:collapse;margin:8px 0 8px;font-size:18px}
+.turn th{font:400 13px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);text-align:left;padding:0 12px 10px 0;border-bottom:1px solid var(--ink);vertical-align:bottom}
+.turn td{padding:14px 12px 14px 0;border-bottom:1px solid rgba(30,51,40,.35);vertical-align:baseline}
+.turn td:first-child{font-weight:500}
+.turn .n{font-family:var(--mono);font-size:15px;white-space:nowrap}
+.turn td .n{display:block}
+.turn td .m{font:400 13px/1.4 var(--mono);color:var(--muted)}
+.small-print{font-size:16px;color:var(--muted)}
+
+/* checklist */
+.list{list-style:none;margin:0 0 20px;padding:0;border-top:1px solid var(--ink)}
+.list li{border-bottom:1px solid rgba(30,51,40,.35)}
+.list label{display:grid;grid-template-columns:28px 1fr;gap:16px;align-items:start;padding:12px 0;min-height:44px;cursor:pointer;font-size:18px;line-height:1.45}
+.list input{appearance:none;-webkit-appearance:none;margin:3px 0 0;width:22px;height:22px;border:1px solid var(--ink);border-radius:3px;background:var(--plate);display:grid;place-items:center;cursor:pointer}
+.list input::after{content:"";width:6px;height:11px;border:solid var(--ink);border-width:0 1.5px 1.5px 0;transform:rotate(45deg) translate(-1px,-1px);opacity:0}
+.list input:checked{background:var(--marigold)}
+.list input:checked::after{opacity:1}
+.list input:checked + span{color:var(--muted)}
+.tally{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:8px}
+.bar{flex:1 1 160px;height:8px;border:1px solid var(--ink);border-radius:4px;overflow:hidden;background:var(--plate)}
+.bar i{display:block;height:100%;width:0;background:var(--marigold);border-right:1px solid var(--ink);transition:width .25s}
+.btn{font:400 13px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink);background:var(--marigold);border:1px solid var(--ink);border-radius:4px;min-height:44px;padding:0 18px;cursor:pointer}
+
+.safe{margin:0 0 1em;padding:0;list-style:none}
+.safe li{padding-left:28px;position:relative;margin-bottom:.6em}
+.safe li::before{content:"";position:absolute;left:2px;top:.72em;width:12px;border-top:1px solid var(--ink)}
+
+footer{border-top:1px solid var(--ink);margin-top:40px;padding:28px 0 56px}
+footer p{font:400 13px/1.6 var(--mono);color:var(--muted);margin:0 0 6px;max-width:72ch}
+
+/* motion */
+.js .rv{opacity:0;transform:translateY(8px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .4s ease-out,transform .4s ease-out}
+.js .fig .ln{stroke-dasharray:1;stroke-dashoffset:1}
+.js .fig.in .ln{stroke-dashoffset:0;transition:stroke-dashoffset 1.2s ease-in-out}
+.js .fig .lab{opacity:0}
+.js .fig.in .lab{opacity:1;transition:opacity .4s ease-out .9s}
+.all .rv,.all .fig .lab{opacity:1 !important;transform:none !important;transition:none !important}
+.all .fig .ln{stroke-dashoffset:0 !important;transition:none !important}
+@media (prefers-reduced-motion:reduce){
+  .js .rv,.js .fig .lab{opacity:1 !important;transform:none !important;transition:none !important}
+  .js .fig .ln{stroke-dashoffset:0 !important;transition:none !important}
+  .bar i{transition:none}
+}
+
+@media (max-width:1023px){
+  :root{--margin:160px;--gap:36px}
+  .hero h1{font-size:64px}
+}
+@media (max-width:899px){
+  .fig svg.wide{display:none}
+  .fig svg.tall{display:block}
+  .fig{max-width:520px}
+}
+@media (max-width:720px){
+  body{font-size:18px}
+  .wrap{padding:0 16px}
+  .grid,.pair{display:block}
+  .hero{padding-top:40px}
+  .hero h1{font-size:46px;margin-bottom:20px}
+  .stand{font-size:19px;margin-bottom:32px}
+  .hero .side{display:flex;flex-direction:column;gap:2px;margin-bottom:20px;padding:0}
+  .side .label + .label{margin-top:0}
+  .ch .side{display:flex;gap:4px 16px;flex-wrap:wrap;padding:0;margin-bottom:8px}
+  .ch h2{font-size:28px;margin-bottom:18px}
+  .pair>aside{margin:-6px 0 22px}
+  .note{display:inline-block;border-top:0;border-left:1px solid var(--ink);padding:0 0 0 10px}
+  .fig{padding:14px 10px 0;margin-bottom:48px}
+  .fig figcaption{margin:16px -10px 0;padding:12px 10px 14px}
+  .hand{font-size:23px}
+  .turn thead{display:none}
+  .turn,.turn tbody,.turn tr,.turn td{display:block}
+  .turn tr{display:grid;grid-template-columns:1fr 1fr;column-gap:16px;padding:14px 0;border-bottom:1px solid rgba(30,51,40,.35)}
+  .turn td{border:0;padding:2px 0}
+  .turn td:first-child{grid-column:1 / -1;font-size:19px;padding-bottom:6px}
+  .turn td[data-k]::before{content:attr(data-k);display:block;font:400 12px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .turn td .n{font-size:14px}
+  footer{padding-bottom:40px}
+}
+</style>
+</head>
+<body>
+
+<div class="credit"><p>Workshop demo: content from the National Park Service, <a href="https://www.nps.gov/yose/planyourvisit/vernalnevadatrail.htm">Vernal Fall and Nevada Fall Trails</a>, public domain, restyled in Field Guide. Not affiliated with the NPS.</p></div>
+
+<header class="hero">
+  <div class="wrap grid">
+    <div class="side rv">
+      <p class="label" style="margin:0">Yosemite National Park</p>
+      <p class="label" style="margin:0">Trailhead: Happy Isles</p>
+      <p class="label" style="margin:0">Shuttle stop #16</p>
+    </div>
+    <h1 class="rv">Vernal Fall and Nevada Fall, by the <em>Mist</em> Trail</h1>
+    <p class="stand rv">A granite stairway of over 600 steps, two waterfalls and two ways back down. You can turn around at the footbridge, at the top of Vernal Fall or at the top of Nevada Fall.</p>
+
+    <figure class="fig full" id="fig1">
+      <svg class="wide" viewBox="0 0 1000 400" role="img" aria-label="Elevation gained from Happy Isles: 400 feet at the Vernal Fall Footbridge, 1,000 feet at the top of Vernal Fall, 2,000 feet at the top of Nevada Fall.">
+        <path class="ln base" pathLength="1" d="M80 360H920"/>
+        <path class="ln" pathLength="1" d="M80 360L323 304L444 220L900 80"/>
+        <g class="lab">
+          <path class="lead" d="M323 304V360M444 220V360M900 80V360"/>
+          <circle class="dot" cx="80" cy="360" r="5"/>
+          <circle class="dot" cx="323" cy="304" r="5"/>
+          <circle class="dot" cx="444" cy="220" r="5"/>
+          <circle class="mari" cx="900" cy="80" r="7"/>
+          <text class="mv" x="80" y="388">Happy Isles · stop #16</text>
+          <text class="mv" x="80" y="40">Feet gained, Mist Trail</text>
+          <path class="lead" d="M316 296L300 280"/>
+          <text class="sv" x="294" y="206" text-anchor="end">Vernal Fall Footbridge</text>
+          <text class="mv r" x="294" y="228" text-anchor="end">+400 ft (120 m)</text>
+          <text class="mv" x="294" y="248" text-anchor="end">1.6 mi round trip</text>
+          <text class="mv" x="294" y="268" text-anchor="end">1–1.5 hours</text>
+          <path class="lead" d="M437 212L424 194"/>
+          <text class="sv" x="418" y="118" text-anchor="end">Top of Vernal Fall</text>
+          <text class="mv r" x="418" y="140" text-anchor="end">+1,000 ft (300 m)</text>
+          <text class="mv" x="418" y="160" text-anchor="end">2.4 mi round trip</text>
+          <text class="mv" x="418" y="180" text-anchor="end">3 hours</text>
+          <path class="lead" d="M894 88L880 150"/>
+          <text class="sv" x="876" y="172" text-anchor="end">Top of Nevada Fall</text>
+          <text class="mv r" x="876" y="194" text-anchor="end">+2,000 ft (610 m)</text>
+          <text class="mv" x="876" y="214" text-anchor="end">5.4 mi round trip</text>
+          <text class="mv" x="876" y="234" text-anchor="end">5–6 hours</text>
+          <text class="mv" x="672" y="300" text-anchor="middle">1.5 mi (2.4 km) of steep,</text>
+          <text class="mv" x="672" y="320" text-anchor="middle">rocky switchbacks</text>
+          <path class="lead" d="M672 282L672 160"/>
+        </g>
+      </svg>
+      <svg class="tall" viewBox="0 0 360 620" role="img" aria-label="Elevation gained from Happy Isles: 400 feet at the Vernal Fall Footbridge, 1,000 feet at the top of Vernal Fall, 2,000 feet at the top of Nevada Fall.">
+        <path class="ln base" pathLength="1" d="M60 560V40"/>
+        <path class="ln" pathLength="1" d="M60 560L110 415L185 342L310 70"/>
+        <g class="lab">
+          <path class="lead" d="M110 415H60M185 342H60M310 70H60"/>
+          <circle class="dot" cx="60" cy="560" r="5"/>
+          <circle class="dot" cx="110" cy="415" r="5"/>
+          <circle class="dot" cx="185" cy="342" r="5"/>
+          <circle class="mari" cx="310" cy="70" r="7"/>
+          <text class="mv" x="60" y="590">Happy Isles · stop #16</text>
+          <text class="mv" x="60" y="612">Feet gained, left to right</text>
+          <path class="lead" d="M117 422L136 440"/>
+          <text class="sv" x="140" y="452">Vernal Fall Footbridge</text>
+          <text class="mv r" x="140" y="472">+400 ft (120 m)</text>
+          <text class="mv" x="140" y="490">1.6 mi round trip</text>
+          <text class="mv" x="140" y="508">1–1.5 hours</text>
+          <path class="lead" d="M192 346L198 352"/>
+          <text class="sv" x="202" y="364">Top of Vernal Fall</text>
+          <text class="mv r" x="202" y="384">+1,000 ft (300 m)</text>
+          <text class="mv" x="202" y="402">2.4 mi round trip</text>
+          <text class="mv" x="202" y="420">3 hours</text>
+          <text class="sv" x="246" y="104" text-anchor="end">Top of Nevada Fall</text>
+          <text class="mv r" x="246" y="124" text-anchor="end">+2,000 ft (610 m)</text>
+          <text class="mv" x="246" y="142" text-anchor="end">5.4 mi round trip</text>
+          <text class="mv" x="246" y="160" text-anchor="end">5–6 hours</text>
+          <path class="lead" d="M302 78L252 98"/>
+          <text class="mv" x="226" y="232" text-anchor="end">1.5 mi (2.4 km)</text>
+          <text class="mv" x="226" y="250" text-anchor="end">of switchbacks</text>
+        </g>
+      </svg>
+      <figcaption><span><b>Fig. 1</b> · Elevation gained from Happy Isles</span><span>Each point sits at half its round-trip distance. Lines between points are straight, not surveyed.</span></figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+<section class="ch" aria-labelledby="c1">
+  <div class="wrap grid">
+    <div class="side rv"><p class="label">Chapter 1</p><p class="label">Choosing a turnaround</p></div>
+    <h2 id="c1" class="rv">Three places to turn around</h2>
+    <div class="pair rv">
+      <div>
+        <table class="turn">
+          <thead><tr><th>Destination</th><th>Round trip</th><th>Gain</th><th>Rating</th><th>Time</th></tr></thead>
+          <tbody>
+            <tr><td>Vernal Fall Footbridge</td><td data-k="Round trip"><span class="n">1.6 mi</span><span class="m">2.6 km</span></td><td data-k="Gain"><span class="n">400 ft</span><span class="m">120 m</span></td><td data-k="Rating">Moderate</td><td data-k="Time"><span class="n">1–1.5 h</span></td></tr>
+            <tr><td>Top of Vernal Fall</td><td data-k="Round trip"><span class="n">2.4 mi</span><span class="m">3.9 km</span></td><td data-k="Gain"><span class="n">1,000 ft</span><span class="m">300 m</span></td><td data-k="Rating">Strenuous</td><td data-k="Time"><span class="n">3 h</span></td></tr>
+            <tr><td>Top of Nevada Fall</td><td data-k="Round trip"><span class="n">5.4 mi</span><span class="m">8.7 km</span></td><td data-k="Gain"><span class="n">2,000 ft</span><span class="m">610 m</span></td><td data-k="Rating">Strenuous</td><td data-k="Time"><span class="n">5–6 h</span></td></tr>
+          </tbody>
+        </table>
+        <p class="small-print">All three start at Happy Isles and go by the Mist Trail.</p>
+      </div>
+      <aside class="note"><b>Open all year</b>Both falls can be visited in every season. See chapter 6 for winter.</aside>
+    </div>
+  </div>
+</section>
+
+<section class="ch" aria-labelledby="c2">
+  <div class="wrap grid">
+    <div class="side rv"><p class="label">Chapter 2</p><p class="label">Before mile 0</p></div>
+    <h2 id="c2" class="rv">Getting to Happy Isles</h2>
+    <div class="pair rv">
+      <p>There is no parking at the trailhead itself. Park at Curry Village, less than 1 mile (1.6 km) away, or ride the Valleywide or East Valley Shuttle to shuttle stop #16. From the stop, follow the signs across the bridge to the trail.</p>
+      <aside class="note"><b>No trailhead parking</b>Curry Village, under 1 mi</aside>
+    </div>
+    <div class="pair rv">
+      <p>Pets, bicycles and strollers are not allowed on this trail. Fill your bottles at the stop: the trailhead and the footbridge are the only drinking water along the way.</p>
+      <aside class="note"><b>Water</b>Stop #16 and the footbridge</aside>
+    </div>
+  </div>
+</section>
+
+<section class="ch" aria-labelledby="c3">
+  <div class="wrap grid">
+    <div class="side rv"><p class="label">Chapter 3</p><p class="label">Mile 0 to 0.8</p></div>
+    <h2 id="c3" class="rv">To the Vernal Fall Footbridge</h2>
+    <div class="pair rv">
+      <p>The footbridge is 0.8 mile (1.3 km) from the trailhead and 400 feet higher. It has an excellent view of Vernal Fall. Turn around here and the round trip is 1.6 miles, rated moderate, one to one and a half hours.</p>
+      <aside class="note"><b>0.8 mi · 1.3 km</b>Water and restrooms, May to October</aside>
+    </div>
+    <div class="pair rv">
+      <p>From May to October there is water and a restroom at the bridge. It is the last tap on the trail. Past here, you carry what you drink.</p>
+    </div>
+
+    <figure class="fig full" id="fig2">
+      <svg class="wide" viewBox="0 0 1000 430" role="img" aria-label="Route diagram: Happy Isles, the bridge, Vernal Fall Footbridge, the split of the Mist Trail and John Muir Trail, the stairway to the top of Vernal Fall, Emerald Pool and Silver Apron, the Clark Point cutoff, switchbacks to the top of Nevada Fall. Two sections close in winter.">
+        <path class="ln" pathLength="1" d="M60 320H340"/>
+        <path class="ln" pathLength="1" d="M340 320L362 302L352 288L378 270L366 256L394 238L384 224L418 204L470 180H600L640 166L626 152L682 138L668 124L734 110L720 98L800 88L880 78"/>
+        <path class="ln" pathLength="1" d="M340 320C400 336 520 336 620 300C700 272 760 250 800 200C840 150 862 110 880 78"/>
+        <path class="ln" pathLength="1" d="M620 300C612 260 604 220 600 180"/>
+        <path class="ln" pathLength="1" d="M104 312V328M112 312V328"/>
+        <g class="lab">
+          <path class="closed" d="M340 320L362 302L352 288L378 270L366 256L394 238L384 224L418 204L470 180"/>
+          <path class="closed" d="M620 300C700 272 760 250 800 200C840 150 862 110 880 78"/>
+          <circle class="mari" cx="60" cy="320" r="7"/>
+          <circle class="dot" cx="250" cy="320" r="5"/>
+          <circle class="dot" cx="340" cy="320" r="4"/>
+          <circle class="dot" cx="470" cy="180" r="5"/>
+          <circle class="dot" cx="540" cy="180" r="4"/>
+          <circle class="dot" cx="600" cy="180" r="4"/>
+          <circle class="dot" cx="620" cy="300" r="5"/>
+          <circle class="dot" cx="880" cy="78" r="5"/>
+          <text class="sv" x="34" y="352">Happy Isles</text>
+          <text class="mv" x="34" y="374">Shuttle stop #16</text>
+          <text class="mv" x="108" y="300" text-anchor="middle">Bridge</text>
+          <text class="sv" x="250" y="352" text-anchor="middle">Vernal Fall Footbridge</text>
+          <text class="mv r" x="250" y="374" text-anchor="middle">0.8 mi</text>
+          <text class="mv" x="250" y="394" text-anchor="middle">Water, restrooms</text>
+          <text class="mv" x="250" y="414" text-anchor="middle">May to October</text>
+          <text class="mv" x="326" y="284" text-anchor="end">Trails split 0.2 mi on</text>
+          <text class="sv i" x="336" y="236" text-anchor="end">Mist Trail stairway</text>
+          <text class="mv" x="336" y="258" text-anchor="end">Over 600 steps · 0.3 mi</text>
+          <text class="sv" x="470" y="134" text-anchor="middle">Top of Vernal Fall</text>
+          <text class="mv" x="470" y="156" text-anchor="middle">317 ft fall</text>
+          <text class="sv" x="540" y="212" text-anchor="middle">Emerald Pool,</text>
+          <text class="sv" x="540" y="232" text-anchor="middle">Silver Apron</text>
+          <text class="mv r" x="540" y="254" text-anchor="middle">No swimming</text>
+          <text class="mv" x="628" y="236">Cutoff</text>
+          <text class="sv" x="636" y="326">Clark Point</text>
+          <text class="sv i" x="480" y="366" text-anchor="middle">John Muir Trail</text>
+          <text class="mv" x="480" y="388" text-anchor="middle">About 4 mi to the valley</text>
+          <text class="mv" x="560" y="92">1.5 mi of</text><text class="mv" x="560" y="112">switchbacks</text>
+          <text class="sv" x="864" y="44" text-anchor="end">Top of Nevada Fall</text>
+          <text class="mv" x="864" y="66" text-anchor="end">594 ft fall</text>
+          <path class="closed" d="M740 410H788"/>
+          <text class="mv r" x="800" y="415">Closed in winter</text>
+        </g>
+      </svg>
+      <svg class="tall" viewBox="0 0 360 720" role="img" aria-label="Route diagram, bottom to top: Happy Isles, the bridge, Vernal Fall Footbridge, the split, the stairway to the top of Vernal Fall, Emerald Pool and Silver Apron, the Clark Point cutoff, switchbacks to the top of Nevada Fall. Two sections close in winter.">
+        <path class="ln" pathLength="1" d="M120 680V500"/>
+        <path class="ln" pathLength="1" d="M120 500L134 488L108 474L134 460L108 446L134 432L108 418L120 400V270L136 254L104 238L136 222L104 206L136 190L104 174L136 158L104 142L120 120V80"/>
+        <path class="ln" pathLength="1" d="M120 500C70 486 48 460 48 420V180C48 130 80 96 120 80"/>
+        <path class="ln" pathLength="1" d="M48 330C70 300 100 284 120 270"/>
+        <path class="ln" pathLength="1" d="M112 636H128M112 644H128"/>
+        <g class="lab">
+          <path class="closed" d="M120 500L134 488L108 474L134 460L108 446L134 432L108 418L120 400"/>
+          <path class="closed" d="M48 330V180C48 130 80 96 120 80"/>
+          <circle class="mari" cx="120" cy="680" r="7"/>
+          <circle class="dot" cx="120" cy="580" r="5"/>
+          <circle class="dot" cx="120" cy="500" r="4"/>
+          <circle class="dot" cx="120" cy="400" r="5"/>
+          <circle class="dot" cx="120" cy="345" r="4"/>
+          <circle class="dot" cx="120" cy="270" r="4"/>
+          <circle class="dot" cx="48" cy="330" r="5"/>
+          <circle class="dot" cx="120" cy="80" r="5"/>
+          <text class="sv" x="146" y="684">Happy Isles</text>
+          <text class="mv" x="146" y="704">Shuttle stop #16</text>
+          <text class="mv" x="146" y="645">Bridge</text>
+          <text class="sv" x="146" y="580">Vernal Fall Footbridge</text>
+          <text class="mv r" x="146" y="600">0.8 mi · water, WC</text>
+          <text class="mv" x="146" y="618">May to October</text>
+          <text class="mv" x="146" y="508">Trails split, 0.2 mi on</text>
+          <text class="sv i" x="146" y="450">Mist Trail stairway</text>
+          <text class="mv" x="146" y="470">600+ steps · 0.3 mi</text>
+          <text class="sv" x="146" y="398">Top of Vernal Fall</text>
+          <text class="mv" x="146" y="416">317 ft fall</text>
+          <text class="sv" x="146" y="344">Emerald Pool, Silver Apron</text>
+          <text class="mv r" x="146" y="362">No swimming</text>
+          <text class="mv" x="146" y="276">Cutoff to Clark Point</text>
+          <text class="mv" x="146" y="204">1.5 mi of switchbacks</text>
+          <text class="sv" x="146" y="78">Top of Nevada Fall</text>
+          <text class="mv" x="146" y="96">594 ft fall</text>
+          <text class="sv i" transform="rotate(-90 34 250)" x="34" y="250" text-anchor="middle">John Muir Trail</text>
+          <text class="sv" transform="rotate(-90 34 420)" x="34" y="420" text-anchor="middle">Clark Point</text>
+          <path class="closed" d="M146 24H190"/>
+          <text class="mv r" x="200" y="29">Closed in winter</text>
+        </g>
+      </svg>
+      <figcaption><span><b>Fig. 2</b> · The route, landmark by landmark</span><span>Not to scale. Order and distances from the NPS page.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="ch" aria-labelledby="c4">
+  <div class="wrap grid">
+    <div class="side rv"><p class="label">Chapter 4</p><p class="label">The stairway</p></div>
+    <h2 id="c4" class="rv">Up the Mist Trail to Vernal Fall</h2>
+    <div class="pair rv">
+      <p>About 0.2 mile (0.3 km) beyond the bridge, the Mist Trail and the John Muir Trail part. Take the Mist Trail 0.3 mile (0.5 km) up a steep granite stairway of over 600 steps.</p>
+      <aside class="note"><b>Over 600 steps</b>0.3 mi · 0.5 km</aside>
+    </div>
+    <div class="pair rv">
+      <p>In spring and early summer the fall throws a tremendous amount of spray across the steps, and the footing is slippery. At the top you look straight down the length of the 317-foot waterfall.</p>
+      <aside class="note"><b>Closed in winter</b>Lower Mist Trail, for falling ice and rock</aside>
+    </div>
+    <p class="hand rv">The steps can be slick and crowded. To come down, take the cutoff to Clark Point instead.</p>
+  </div>
+</section>
+
+<section class="ch" aria-labelledby="c5">
+  <div class="wrap grid">
+    <div class="side rv"><p class="label">Chapter 5</p><p class="label">Vernal to Nevada</p></div>
+    <h2 id="c5" class="rv">Past Emerald Pool to Nevada Fall</h2>
+    <div class="pair rv">
+      <p>Shortly beyond the brink of Vernal Fall you pass Emerald Pool and Silver Apron. Swimming here is illegal and dangerous because of the extremely hazardous current.</p>
+      <aside class="note"><b>No swimming</b>Emerald Pool, Silver Apron</aside>
+    </div>
+    <p class="hand rv">The current is the danger. Stay out of the river and off its edge.</p>
+    <div class="pair rv">
+      <p>From the top of Vernal Fall it is another 1.5 miles (2.4 km) of steep, rocky switchbacks to Nevada Fall, which crashes down 594 feet. The round trip from Happy Isles is 5.4 miles with 2,000 feet of climbing, five to six hours.</p>
+      <aside class="note"><b>1.5 mi · 2.4 km</b>Switchbacks to Nevada Fall</aside>
+    </div>
+    <div class="pair rv">
+      <p>There are vault toilets along the Mist Trail beyond the top of Vernal Fall, and at the top of Nevada Fall. Some hikers go on from here to Half Dome or into the backcountry.</p>
+      <aside class="note"><b>Vault toilets</b>Above Vernal Fall, top of Nevada Fall</aside>
+    </div>
+  </div>
+</section>
+
+<section class="ch" aria-labelledby="c6">
+  <div class="wrap grid">
+    <div class="side rv"><p class="label">Chapter 6</p><p class="label">The way back</p></div>
+    <h2 id="c6" class="rv">Two ways down</h2>
+    <div class="pair rv">
+      <p>The Mist Trail is the short way: 2.5 miles (4 km). The John Muir Trail is about 4 miles one way, and longer. From the top of Nevada Fall, continue over the bridge to the John Muir Trail for the alternate route back to Yosemite Valley.</p>
+      <aside class="note"><b>Mist 2.5 mi</b>John Muir about 4 mi</aside>
+    </div>
+    <div class="pair rv">
+      <p>If you only went as far as Vernal Fall, make a loop: carry on past the brink and Emerald Pool to the next junction, about 0.2 mile (0.3 km), take the cutoff to Clark Point and come down the John Muir Trail.</p>
+    </div>
+    <div class="pair rv">
+      <p>Whichever way you take, stay on the switchbacks. Cutting them causes erosion and injuries.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch" aria-labelledby="c7">
+  <div class="wrap grid">
+    <div class="side rv"><p class="label">Chapter 7</p><p class="label">Winter</p></div>
+    <h2 id="c7" class="rv">When the trail closes</h2>
+    <div class="pair rv">
+      <p>Both falls can be reached all year, but two sections close in winter, marked in rust on Fig. 2. The lower Mist Trail along Vernal Fall closes because of falling ice and rock. The upper John Muir Trail between Clark Point and the top of Nevada Fall closes because of treacherously icy conditions.</p>
+      <aside class="note"><b>Two closures</b>Lower Mist Trail; John Muir Trail above Clark Point</aside>
+    </div>
+    <div class="pair rv">
+      <p>Open sections can still be very icy or snowy. Check current conditions on the <a href="https://www.nps.gov/yose/planyourvisit/vernalnevadatrail.htm">park's trail page</a> before you set out.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ch" aria-labelledby="c8">
+  <div class="wrap grid">
+    <div class="side rv"><p class="label">Chapter 8</p><p class="label">Stay safe</p></div>
+    <h2 id="c8" class="rv">What hurts people here</h2>
+    <div class="pair rv">
+      <p>Sprained ankles and knee injuries are common on this trail. The causes are loose rock, decomposed granite, steep steps and wet, slippery footing.</p>
+      <aside class="note"><b>Common injuries</b>Ankles and knees</aside>
+    </div>
+    <div class="pair rv">
+      <ul class="safe">
+        <li>Stay on the established trail. Do not swim, wade or walk along the river's edge.</li>
+        <li>Observe warning signs and railings. They are there for your safety.</li>
+        <li>Carry a headlamp, with fresh or extra batteries.</li>
+        <li>Drink plenty and drink often, pace yourself, rest in the shade and eat salty snacks.</li>
+        <li>Keep food within arm's reach, never feed wildlife, and pack out all trash and food waste.</li>
+      </ul>
+    </div>
+
+    <figure class="fig small full" id="fig3" style="grid-column:2">
+      <svg viewBox="0 0 360 276" role="img" aria-label="Water to carry: 1 quart or liter to the footbridge, 2 to the top of Vernal Fall, 3 to 4 to the top of Nevada Fall.">
+        <path class="ln base" pathLength="1" d="M20 190H340"/>
+        <path class="ln" pathLength="1" d="M52 190V156H108V190M52 156"/>
+        <path class="ln" pathLength="1" d="M152 190V122H208V190M152 156H208"/>
+        <path class="ln" pathLength="1" d="M252 190V88H308V190M252 156H308M252 122H308"/>
+        <g class="lab">
+          <path class="lead" d="M252 88V54H308V88"/>
+          <text class="mv r" x="80" y="146" text-anchor="middle">1</text>
+          <text class="mv r" x="180" y="112" text-anchor="middle">2</text>
+          <text class="mv r" x="280" y="44" text-anchor="middle">3–4</text>
+          <text class="sv" x="80" y="214" text-anchor="middle">Footbridge</text>
+          <text class="sv" x="180" y="214" text-anchor="middle">Top of</text>
+          <text class="sv" x="180" y="234" text-anchor="middle">Vernal Fall</text>
+          <text class="sv" x="280" y="214" text-anchor="middle">Top of</text>
+          <text class="sv" x="280" y="234" text-anchor="middle">Nevada Fall</text>
+          <text class="mv" x="20" y="268">Quarts or liters to carry</text>
+        </g>
+      </svg>
+      <figcaption><span><b>Fig. 3</b> · Water to carry</span><span>Recommended amounts by destination.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="ch" aria-labelledby="c9">
+  <div class="wrap grid">
+    <div class="side rv"><p class="label">Chapter 9</p><p class="label">Before you go</p></div>
+    <h2 id="c9" class="rv">Pack list</h2>
+    <div class="pair rv">
+      <div>
+        <div class="tally"><span class="label" id="count" aria-live="polite">0 of 8 ticked</span><span class="bar" aria-hidden="true"><i id="fill"></i></span><button class="btn" type="button" id="reset">Clear ticks</button></div>
+        <ul class="list" id="pack">
+          <li><label><input type="checkbox" value="water"><span>Water for your turnaround: 1 quart to the footbridge, 2 to the top of Vernal Fall, 3 to 4 to the top of Nevada Fall.</span></label></li>
+          <li><label><input type="checkbox" value="lamp"><span>A headlamp, with fresh or extra batteries.</span></label></li>
+          <li><label><input type="checkbox" value="salt"><span>Salty snacks.</span></label></li>
+          <li><label><input type="checkbox" value="spray"><span>A plan for slippery footing and heavy spray, in spring and early summer.</span></label></li>
+          <li><label><input type="checkbox" value="shuttle"><span>A way to stop #16: park at Curry Village or ride the Valleywide or East Valley Shuttle.</span></label></li>
+          <li><label><input type="checkbox" value="winter"><span>Current trail conditions checked, if it is winter.</span></label></li>
+          <li><label><input type="checkbox" value="pets"><span>Pets, bicycles and strollers left behind.</span></label></li>
+          <li><label><input type="checkbox" value="trash"><span>Room to pack out all trash and food waste.</span></label></li>
+        </ul>
+      </div>
+      <aside class="note"><b>Saved here</b>Ticks stay in this browser only</aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap grid">
+    <div class="side"><p class="label">Source</p></div>
+    <div>
+      <p>Workshop demo: content from the National Park Service, <a href="https://www.nps.gov/yose/planyourvisit/vernalnevadatrail.htm">Vernal Fall and Nevada Fall Trails</a>, public domain, restyled in Field Guide. Not affiliated with the NPS.</p>
+      <p>Facts as published on the source page, last updated November 2, 2026. Conditions change: check the park before you hike. Yosemite information line 209/372-0200.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function showAll(){root.classList.add('all');}
+  try{
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){window.__ioFired=1;showAll();}
+    else{
+      var io=new IntersectionObserver(function(es){
+        window.__ioFired=1;
+        es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+      },{threshold:0.15});
+      document.querySelectorAll('.rv,.fig').forEach(function(el){io.observe(el);});
+    }
+  }catch(err){showAll();}
+
+  var KEY='fg-mist-trail-pack', boxes=[].slice.call(document.querySelectorAll('#pack input'));
+  var count=document.getElementById('count'), fill=document.getElementById('fill');
+  var saved={};
+  try{ saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
+  function render(){
+    var n=boxes.filter(function(b){return b.checked;}).length;
+    count.textContent=n+' of '+boxes.length+' ticked';
+    fill.style.width=(n/boxes.length*100)+'%';
+  }
+  function save(){
+    var o={}; boxes.forEach(function(b){ if(b.checked) o[b.value]=1; });
+    try{ localStorage.setItem(KEY,JSON.stringify(o)); }catch(e){}
+  }
+  boxes.forEach(function(b){ b.checked=!!saved[b.value]; b.addEventListener('change',function(){render();save();}); });
+  document.getElementById('reset').addEventListener('click',function(){ boxes.forEach(function(b){b.checked=false;}); render(); save(); });
+  render();
+})();
+</script>
+</body>
+</html>
