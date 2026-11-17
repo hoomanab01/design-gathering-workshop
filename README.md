@@ -41,7 +41,7 @@ The examples restyle real, openly licensed web pages so you can see each style o
 ## The steps on the day
 
 ### 1 · Set up (5 minutes)
-1. In Claude, open Settings and find **Skills**. Switch on `frontend-design`. If you like, also `web-artifacts-builder`, `theme-factory`, `canvas-design` and `algorithmic-art`.
+1. In Claude, open **Settings**, then **Capabilities**, and switch on **Create and edit files**. Then open **Customize**, then **Skills**, and switch on `frontend-design`. If you like, also `web-artifacts-builder`, `theme-factory`, `canvas-design` and `algorithmic-art`. Help: [Use skills in Claude](https://support.claude.com/en/articles/12512180).
 2. In the **Chat** tab, create a new **Project**. Name it after your idea.
 3. Open the style guide you want from `styles/`, copy all of it, and paste it into the Project's instructions.
 4. Upload the example page for your style from `examples/` to the Project as a file.
